@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -12,7 +11,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view('productos.index');
     }
 
     /**
@@ -20,7 +19,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('productos.create');
     }
 
     /**
@@ -44,7 +43,7 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('productos.edit');
     }
 
     /**
